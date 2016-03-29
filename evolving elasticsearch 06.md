@@ -3,5 +3,3 @@
 * Position → velocity
 * anomaly detection
 * geo centroid aggregation
-
-## query profiler

@@ -1,9 +1,9 @@
 
-## heap usage better data structures
+## better data structures
 
-* doc values are columnar on disk, less memory pressure but fast
+Doc Values:
+* doc values are columnar on disk, leading to less memory pressure, but slower
 * Some data structures use a lot of memory (aggregations, sorting)
-* Columnar store file system cache on by default
-* field length norms rewritten using lucence doc values
-* parent child, doc values, faster joins
-* geo points v2, doc values, 50% index size, up to 10x query speed
+* field length norms (way of boosting relevance of shorter records) rewritten
+  using lucence doc values
+* parent child will use doc values, faster joins
