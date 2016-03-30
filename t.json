@@ -1,0 +1,36 @@
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "fuzzy_like_this_field": {
+            "gamertag.gamercase": {
+              "like_text": "{{gamertag}}",
+              "analyzer": "gamercase",
+              "boost": 2
+              //...
+            }
+          }
+        },
+        {
+          "fuzzy_like_this_field": {
+            "gamertag.gamercamel": {
+              "like_text": "{{gamertag}}",
+              "analyzer": "gamerCamelCase",
+              "boost": 2
+              //...
+            }
+          }
+        },
+        {
+          "match": {
+            "gamertag.raw": {
+              "query": "{{gamertag}}",
+              "boost": 10
+            }
+          }
+        }
+      ]
+    }
+  }
+}
