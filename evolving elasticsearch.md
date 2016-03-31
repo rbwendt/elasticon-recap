@@ -1,7 +1,6 @@
 # Evolving Elasticsearch
 
 
-
 ## Usability
 
 * query / filter merge
@@ -11,13 +10,11 @@
 * admin safeguards, "requested 10000 results" warning
 
 
-
 ## What's a columnar store?
 
 * store data on disk as columns instead of rows.
 
 ![columnar comparison](columnar.png)
-
 
 
 ## better data structures
@@ -30,14 +27,12 @@ Doc Values:
 * parent child will use doc values, faster joins
 
 
-
 ## Security
 
 * Now taking security seriously.
 * JarHell check, looks for duplicate jars. For removing stale dependencies
 * Java Security Manager. Authorization for java code. Now using minimal privileges.
 * Modularization of core so that privileges are only granted where needed
-
 
 
 ## Tests
@@ -48,9 +43,7 @@ Doc Values:
 * real integration tests. Take zip file, unpack, install, start node, form a cluster, run tests of what a user would do
 
 
-
 ## query profiler
-
 
 
 ## Post process results of other aggregations
@@ -58,7 +51,6 @@ Doc Values:
 * Position → velocity
 * anomaly detection
 * geo centroid aggregation
-
 
 
 ## release schedule
@@ -72,12 +64,10 @@ Doc Values:
 * any minor of previous major should move forward
 
 
-
 ## reindex api
 
 * query to reindex a subset of your data
 * update by query
-
 
 
 ## task manager
@@ -85,13 +75,11 @@ Doc Values:
 * stats, cancellation, throttling
 
 
-
 ## ingest node
 
 * power of logstash filters available in es
 * data transformation (e.g. tabular to json)
 * wraps index/bulk api
-
 
 
 ## painless scripting
@@ -103,7 +91,6 @@ Doc Values:
 * static is 10x faster
 
 
-
 ## data structures
 * string mappings
   * text field: full analysis
@@ -113,11 +100,9 @@ Doc Values:
 * Geo fields: combine geo points and geo shapes (experimental)
 
 
-
 ### completion suggester
 * document oriented!
 * boost by prefix length, etc
-
 
 
 ### search after
