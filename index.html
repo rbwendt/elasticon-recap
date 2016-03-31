@@ -90,6 +90,78 @@
 								 data-separator-vertical="^\n\n"
 								 data-charset="utf-8">
 				</section>
+
+				<section>
+					<style type="text/css">
+						text.end {
+							z-index:3;
+							fill: url(#Gradient);
+							font-weight:900;
+							font-family: 'Exo 2';
+						}
+						text.end.stroke {
+							z-index: 2;
+							stroke-linecap: butt;
+							stroke-linejoin: miter;
+							stroke-opacity: 1;
+						}
+						text.end.stroke {
+							z-index: 1
+						}
+					</style>
+					<link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
+					<svg xmlns="http://www.w3.org/2000/svg" width="840px" height="500px" viewBox="0 0 1100 300">
+						<defs>
+							<linearGradient id="Gradient">
+								<stop id="stop1" class="stop1" offset="0" stop-color="hsl(220,100%,50%)"/>
+				        <stop id="stop2" class="stop2" offset="1" stop-color="hsl(240,100%,50%)"/>
+				      </linearGradient>
+					  </defs>
+						<text class="end stroke back" x="60" y="150" font-size="258" stroke="#f0f" stroke-width="40px">
+							<animate
+								attributeName="stroke-width"
+								from="70"  to="120"
+								begin="0s" dur="5s"
+								type="rotate"
+								repeatCount="indefinite"
+							/>
+							The End
+						</text>
+						<text class="end stroke back" x="60" y="150" font-size="258" stroke="#0f0" stroke-width="40px">
+							<animate
+								attributeName="stroke-width"
+								from="120"  to="70"
+								begin="0s" dur="5s"
+								type="rotate"
+								repeatCount="indefinite"
+							/>
+							The End
+						</text>
+						<text class="end stroke" x="60" y="150" font-size="258" stroke="#0ff" stroke-width="40px">
+							<animate
+								attributeName="stroke-width"
+								from="10"  to="60"
+								begin="0s" dur="5s"
+								type="rotate"
+								repeatCount="indefinite"
+							/>
+							The End
+						</text>
+						<text class="end stroke" x="60" y="150" font-size="258" stroke="#ff0" stroke-width="40px">
+							<animate
+								attributeName="stroke-width"
+								from="60"  to="10"
+								begin="0s" dur="5s"
+								type="rotate"
+								repeatCount="indefinite"
+							/>
+							The End
+						</text>
+						<text class="end" x="60" y="150" font-size="258">
+							The End
+					  </text>
+	 				</svg>
+				</section>
 			</div>
 
 		</div>
