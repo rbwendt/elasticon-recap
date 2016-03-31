@@ -67,11 +67,3 @@ Analyze web analytics to generate a time series engine.
 ### namespaces
 * v1_shared: lots of small customers
 * v1_condenast: big customer (new yorker, vogue)
-
-
-## bugs lies hogs
-* see photo
-
-
-## excited about future
-* see photo
