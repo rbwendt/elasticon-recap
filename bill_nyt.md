@@ -124,7 +124,7 @@ CMS (Content) -> SQS -> Handlers (Data sources) -> Normalization (Java normaliza
 
 
 ## Conclusions
-- Figure out how ytou can be better than Google, if not just use Google
+- Figure out how you can be better than Google, if not just use Google
   - Who your users are
 - Make sure Search is integrated part of the product
   - Often search is an after thought, make a search, and then add search
