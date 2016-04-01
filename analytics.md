@@ -38,7 +38,7 @@ Analyze web analytics to generate a time series engine.
 
 ### historical analytics
 
-* spark for historical data. Create thousands of nodes to pull historical data from v1 into v2.
+* spark (cluster computing) for historical data. Create thousands of nodes to pull historical data from v1 into v2.
 * also smooths out missing data from daily outages
 
 
@@ -48,21 +48,10 @@ Analyze web analytics to generate a time series engine.
 * historical data answers questions
 
 
-### slowness advice
+## slowness advice
 
 * give big customers their own index
-* hot / cold something or other
-
-
-### all together now
-* time based indices
-* index versioning
-* see photo
-
-### node shard allocation
-* raw (cpu), hot (mem cpu), warm (mem, ssd), cold (mem, rust)
 * system spread across availability zones
-
 
 ### namespaces
 * v1_shared: lots of small customers
