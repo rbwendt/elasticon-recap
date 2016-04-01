@@ -120,7 +120,7 @@ By (ab)using ES analyzers
 ```
 "gc-0o": {
   "pattern": "0",
-  "type": "pattern_relace",
+  "type": "pattern_replace",
   "replacement": "o"
 }
 ```
@@ -167,9 +167,7 @@ Use several analyzers
 
 ## Query template
 ```
-"query": {
-  "bool": {
-    "should": [
+{"query": {"bool": { "should": [
       {"fuzzy_like_this_field": {
           "gamertag.gamercase": {
             "like_text": "{{gamertag}}",
@@ -184,6 +182,5 @@ Use several analyzers
           "gamertag.raw": {
             "query": "{{gamertag}}",
             "boost": 10
-          }}}
-    ]}}
+          }}}]}}}
 ```

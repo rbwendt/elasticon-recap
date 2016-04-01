@@ -12,7 +12,7 @@ How to do search at NYT and what they've learned
 
 Take aways:
 - Keep it simple, things gets complicated, need to think things through
-- Why not just use google?  ¯\\\_(ツ)\_/¯
+- Why not just use Google?  ¯\\\_(ツ)\_/¯
 - Is ES the right tool for text search?
 
 
@@ -50,7 +50,7 @@ Has been publishing news since 1851, 165 years
 - Sources
   - CMS
   - Legacy systems
-  - File based archies
+  - File based archives
 - Low latency, <1s
 
 
@@ -58,8 +58,8 @@ Has been publishing news since 1851, 165 years
 - Find something you read (on paper), date is very important, since web and paper publication date can be different
 - Ego search, find something you wrote
 - Searching for reviews
-- Recipes, launches a cooking app, and became really popular, (more than 100 years of recipes)
-- Manual sharing, hey, I read something about this, and others go search for the subject
+- Recipes, launched a cooking app, and became really popular, (more than 100 years of recipes)
+- Manual sharing, hey, I read something about some subject, and others go search for the subject
 - Casual news search, what happened recently
 - Serious news search, journalist, historians, etc
 
@@ -104,7 +104,7 @@ CMS (Content) -> SQS -> Handlers (Data sources) -> Normalization (Java normaliza
 
 ## Replay
 - Use kafka, all content go through it
-- Kafka will presist all content, source of truth
+- Kafka will persist all content, source of truth
 - Easy to create new search clusters from Kafka replay
 - Never upgrade ES clusters
 
@@ -126,7 +126,7 @@ CMS (Content) -> SQS -> Handlers (Data sources) -> Normalization (Java normaliza
 ## Conclusions
 - Figure out how you can be better than Google, if not just use Google
   - Who your users are
-- Make sure Search is integrated part of the product
+- Make sure search is integrated part of the product
   - Often search is an after thought, make a search, and then add search
   - Consistent across devices
   - Focus where you can make a difference for your end user
